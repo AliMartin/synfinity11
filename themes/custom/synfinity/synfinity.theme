@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Synfinity theme file.
+ */
+
+
+/**
+ * Add node ID to body classes
+ */
+function synfinity_preprocess_html(&$variables) {
+  // Add node ID to the body class.
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if (is_object($node)) {
+    $variables['attributes']['class'][] = 'node-' . $node->id();
+  }
+}

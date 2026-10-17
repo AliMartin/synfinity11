@@ -1,0 +1,178 @@
+--- a/background_image.info.yml
++++ b/background_image.info.yml
+@@ -2,7 +2,7 @@
+ description: 'Provides an integrated UI for displaying background images on a site.'
+ type: module
+ configure: background_image.admin
+-core_version_requirement: ^9 || ^10
++core_version_requirement: ^10.3 || ^11
+ php: ^8
+ dependencies:
+   - drupal:field
+--- a/background_image.module
++++ b/background_image.module
+@@ -221,7 +221,7 @@
+ 
+   // [*:background_image:*] chained tokens.
+   $backgroundImageTokens = $token->findWithPrefix($tokens, $entityType);
+-  if ($backgroundImageTokens && _token_module($type, $entityType) === $entityType) {
++  if ($backgroundImageTokens && \Drupal::service('token.module_provider')->getTokenModule($type, $entityType) === $entityType) {
+     $backgroundImage = FALSE;
+     $manager = BackgroundImageManager::service();
+     if ($type === 'current-page') {
+--- a/src/BackgroundImageFormTrait.php
++++ b/src/BackgroundImageFormTrait.php
+@@ -442,7 +442,7 @@
+     /** @var self $self */
+     $self = $form_state->get(self::class);
+     if (!$self) {
+-      $self = new self();
++      $self = \Drupal::service('class_resolver')->getInstanceFromDefinition(self::class);
+       $form_state->set(self::class, $self);
+     }
+     return $self->setForm($form)->setFormState($form_state);
+@@ -460,7 +460,7 @@
+     /** @var self $self */
+     $self = $form_state->get(self::class);
+     if (!$self) {
+-      $self = new self();
++      $self = \Drupal::service('class_resolver')->getInstanceFromDefinition(self::class);
+       $form_state->set(self::class, $self);
+     }
+     return $self->setForm($form_state->getCompleteForm())->setFormState($form_state);
+@@ -480,7 +480,7 @@
+     /** @var self $self */
+     $self = $form_state->get(self::class);
+     if (!$self) {
+-      $self = new self();
++      $self = \Drupal::service('class_resolver')->getInstanceFromDefinition(self::class);
+       $form_state->set(self::class, $self);
+     }
+     if ($self->subform) {
+--- a/src/BackgroundImageManager.php
++++ b/src/BackgroundImageManager.php
+@@ -30,12 +30,10 @@
+ use Drupal\views\ViewEntityInterface;
+ use Drupal\views\Views;
+ use Drupal\webform\WebformInterface;
+-use Symfony\Component\DependencyInjection\ContainerAwareTrait;
+ use Symfony\Component\DependencyInjection\ContainerInterface;
+ 
+ class BackgroundImageManager implements BackgroundImageManagerInterface {
+ 
+-  use ContainerAwareTrait;
+   use DependencySerializationTrait;
+   use StringTranslationTrait;
+ 
+@@ -287,7 +285,7 @@
+    *   the appropriate values for the specified color index.
+    */
+   protected function colorSampleGdImage(GDToolkit $image, $default = NULL) {
+-    if ($image->apply('resize', ['width' => 1, 'height' => 1]) && ($resource = $image->getResource())) {
++    if ($image->apply('resize', ['width' => 1, 'height' => 1]) && ($resource = $image->getImage())) {
+       return @Color::rgbToHex(array_slice(@imagecolorsforindex($resource, @imagecolorat($resource, 0, 0)), 0, 3)) ?: $default;
+     }
+     return $default;
+@@ -354,8 +352,8 @@
+         else if ($entity instanceof ViewEntityInterface && ($this->backgroundImages[$hash] = $this->getViewBackgroundImage($entity, $langcode, $context))) {
+           return $this->backgroundImages[$hash];
+         }
+-        else if ($entity instanceof WebformInterface && ($this->backgroundImage = $this->getWebformBackgroundImage($entity))) {
+-          return $this->backgroundImage;
++        else if ($entity instanceof WebformInterface && ($this->backgroundImages[$hash] = $this->getWebformBackgroundImage($entity))) {
++          return $this->backgroundImages[$hash];
+         }
+       }
+       $this->backgroundImages[$hash] = $this->getGlobalBackgroundImage($langcode, $context) ?: FALSE;
+@@ -374,7 +372,6 @@
+    * {@inheritdoc}
+    */
+   public function getCssMinifier() {
+-    // @todo this should be using $this->container, but it's not always set?
+     return \Drupal::getContainer()->get('advagg.css_minifier', ContainerInterface::NULL_ON_INVALID_REFERENCE);
+   }
+ 
+--- a/src/BackgroundImageManagerInterface.php
++++ b/src/BackgroundImageManagerInterface.php
+@@ -11,9 +11,8 @@
+ use Drupal\file\FileInterface;
+ use Drupal\views\ViewEntityInterface;
+ use Drupal\webform\WebformInterface;
+-use Symfony\Component\DependencyInjection\ContainerAwareInterface;
+-
+-interface BackgroundImageManagerInterface extends ContainerAwareInterface, ContainerInjectionInterface {
++
++interface BackgroundImageManagerInterface extends ContainerInjectionInterface {
+ 
+   /**
+    * Perform alterations before a form is rendered.
+--- a/src/Controller/BackgroundImageCssController.php
++++ b/src/Controller/BackgroundImageCssController.php
+@@ -201,7 +201,7 @@
+       if (preg_match('/\.min\.css$/', $uri ?? '') &&
+         ($css_minifier = $this->backgroundImageManager->getCssMinifier())) {
+         $data = $css_minifier->optimize($data, [], []);
+-        $css_minifier->addLicense($data, preg_replace('/\.min\.css$/', '.css', file_create_url($uri)));
++        $css_minifier->addLicense($data, preg_replace('/\.min\.css$/', '.css', \Drupal::service('file_url_generator')->generateAbsoluteString($uri)));
+       }
+       if (!$this->dump($data, $uri)) {
+         return FALSE;
+--- a/src/Entity/BackgroundImage.php
++++ b/src/Entity/BackgroundImage.php
+@@ -19,7 +19,6 @@
+ use Drupal\Core\Url;
+ use Drupal\image\Entity\ImageStyle;
+ use Drupal\user\UserInterface;
+-use Symfony\Component\DependencyInjection\ContainerAwareTrait;
+ 
+ /**
+  * Defines the Background Image entity.
+@@ -68,7 +67,6 @@
+  */
+ class BackgroundImage extends ContentEntityBase implements BackgroundImageInterface {
+ 
+-  use ContainerAwareTrait;
+   use EntityChangedTrait;
+   use StringTranslationTrait;
+ 
+@@ -110,7 +108,7 @@
+   /**
+    * {@inheritdoc}
+    */
+-  public function __sleep() {
++  public function __sleep(): array {
+     // Don't use unset() here because the magic method
+     // \Drupal\Core\Entity\ContentEntityBase::__get can cause the value to be
+     // set as a FieldItemList object. Instead, always explicitly set to NULL.
+@@ -288,10 +286,7 @@
+    * @return \Symfony\Component\DependencyInjection\ContainerInterface
+    */
+   protected function getContainer() {
+-    if (!isset($this->container)) {
+-      $this->setContainer(\Drupal::getContainer());
+-    }
+-    return $this->container;
++    return \Drupal::getContainer();
+   }
+ 
+   /**
+@@ -373,7 +368,7 @@
+       $uri = $imageStyle->buildUrl($fileUri);
+     }
+     else {
+-      $uri = file_create_url($fileUri);
++      $uri = $this->getContainer()->get('file_url_generator')->generateAbsoluteString($fileUri);
+     }
+     $options += ['absolute' => TRUE];
+     return Url::fromUri($uri, $options)->toString();
+--- a/src/Form/BackgroundImageForm.php
++++ b/src/Form/BackgroundImageForm.php
+@@ -245,7 +245,7 @@
+       $entity_type_label = $entity_type->getLabel();
+       $bundles = self::getBackgroundImageManager()->getEnabledEntityTypeBundles($entity_type);
+       foreach ($bundles as $bundle => $info) {
+-        $entity_bundles["$entity_type_id:$bundle"] = $entity_type_id === $bundle ? $info['label'] : "${info['label']} ($entity_type_label)";
++        $entity_bundles["$entity_type_id:$bundle"] = $entity_type_id === $bundle ? $info['label'] : "{$info['label']} ($entity_type_label)";
+       }
+     }
+ 

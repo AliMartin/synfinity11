@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/dlmediac/synfinity.co.uk
+    - /bin/cp -r * $DEPLOYPATH

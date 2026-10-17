@@ -1,0 +1,259 @@
+{
+    "name": "drupal/legacy-project",
+    "description": "Project template for Drupal projects with composer following drupal/drupal layout",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://www.drupal.org/project/drupal",
+    "support": {
+        "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
+        "chat": "https://www.drupal.org/node/314178"
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/background_image",
+                "version": "2.0.2",
+                "source": {
+                    "type": "git",
+                    "url": "https://git.drupalcode.org/project/background_image.git",
+                    "reference": "2.0.2"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://ftp.drupal.org/files/projects/background_image-2.0.2.zip",
+                    "reference": "2.0.2",
+                    "shasum": "6b1383746d1d7ab16c9401bbaeb5ef4e0e0606f7"
+                },
+                "require": {
+                    "drupal/core": "^10.3 || ^11"
+                },
+                "type": "drupal-module",
+                "extra": {
+                    "drupal": {
+                        "version": "2.0.2",
+                        "datestamp": "1699326764",
+                        "security-coverage": {
+                            "status": "covered",
+                            "message": "Covered by Drupal's security advisory policy"
+                        }
+                    }
+                },
+                "license": [
+                    "GPL-2.0-or-later"
+                ],
+                "description": "Provides an integrated UI for displaying background images on a site.",
+                "homepage": "https://www.drupal.org/project/background_image",
+                "support": {
+                    "source": "https://git.drupalcode.org/project/background_image"
+                }
+            }
+        },
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "jackmoore/colorbox",
+                "version": "1.6.4",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/jackmoore/colorbox/archive/1.6.4.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "desandro/masonry",
+                "version": "3.3.1",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/desandro/masonry/archive/v3.3.1.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "desandro/imagesloaded",
+                "version": "3.1.8",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/desandro/imagesloaded/archive/v3.1.8.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "enyo/dropzone",
+                "version": "4.2.0",
+                "type": "drupal-library",
+                "source": {
+                    "url": "https://github.com/enyo/dropzone",
+                    "type": "git",
+                    "reference": "origin/master"
+                }
+            }
+        }
+    ],
+    "require": {
+        "bower-asset/fitvids": "^1.0",
+        "bower-asset/mmenu": "^8.0",
+        "composer/installers": "^2.0",
+        "cweagans/composer-patches": "^1.7",
+        "desandro/imagesloaded": "3.1.8",
+        "desandro/masonry": "3.3.1",
+        "drupal/admin_toolbar": "^3.6",
+        "drupal/background_image": "2.0.2",
+        "drupal/background_image_formatter": "^2.0",
+        "drupal/backup_migrate": "^5.0",
+        "drupal/bootstrap5": "^4.0",
+        "drupal/colorbox": "^2.0",
+        "drupal/colorbox_media_video": "^2.0",
+        "drupal/core-composer-scaffold": "^11",
+        "drupal/core-project-message": "^11",
+        "drupal/core-recommended": "^11",
+        "drupal/core-vendor-hardening": "^11",
+        "drupal/crop": "^2.5",
+        "drupal/entity_browser": "^2.10",
+        "drupal/entity_clone": "^2.1@beta",
+        "drupal/faqfield": "^8.0",
+        "drupal/fitvids": "^2.0",
+        "drupal/gin": "^5.0",
+        "drupal/gin_toolbar": "^3.0",
+        "drupal/honeypot": "^2.1",
+        "drupal/image_widget_crop": "^3.0",
+        "drupal/inline_entity_form": "^3.0@RC",
+        "drupal/insert_view": "^3.0",
+        "drupal/jquery_ui": "^1.6",
+        "drupal/linkit": "^7.0",
+        "drupal/media_entity_soundcloud": "^3.1",
+        "drupal/metatag": "^2.1",
+        "drupal/pathauto": "^1.12",
+        "drupal/responsive_favicons": "^4.0",
+        "drupal/responsive_menu": "^4.4",
+        "drupal/schema_metatag": "^3.0",
+        "drupal/slick": "^3.0",
+        "drupal/slick_views": "^3.0",
+        "drupal/tb_megamenu": "^3.0@alpha",
+        "drupal/upgrade_status": "^4.3",
+        "drupal/views_infinite_scroll": "^2.0",
+        "drupal/views_slideshow": "^5.0",
+        "drupal/webform": "^6.2@RC",
+        "drupal/xmlsitemap": "^2.0@beta",
+        "drush/drush": "^13",
+        "enyo/dropzone": "4.2.0",
+        "jackmoore/colorbox": "^1.6",
+        "npm-asset/blazy": "^1.8",
+        "npm-asset/cropper": "^4.1",
+        "npm-asset/slick-carousel": "^1.8",
+        "npm-asset/superfish": "^1.7",
+        "oomphinc/composer-installers-extender": "^2.0"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true,
+            "drupal/core-vendor-hardening": true,
+            "oomphinc/composer-installers-extender": true,
+            "php-http/discovery": true,
+            "phpstan/extension-installer": true,
+            "symfony/runtime": true
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "enable-patching": true,
+        "patches": {
+            "drupal/colorbox_media_video": {
+                "Add responsive video option to field formatter": "https://www.drupal.org/files/issues/2023-02-24/3300344-colorbox_media_video--responsive-video-option-5.patch"
+            },
+            "drupal/background_image": {
+                "Drupal 10.3 and 11 compatibility": "patches/background-image-drupal11.patch"
+            },
+            "drupal/upgrade_status": {
+                "Fix Drupal 11.4 theme origin detection (upstream issue 3607931)": "patches/upgrade-status-theme-origin.patch"
+            }
+        },
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "./"
+            }
+        },
+        "installer-types": [
+            "bower-asset",
+            "npm-asset"
+        ],
+        "installer-paths": {
+            "core": [
+                "type:drupal-core"
+            ],
+            "libraries/{$name}": [
+                "type:drupal-library",
+                "type:bower-asset",
+                "type:npm-asset"
+            ],
+            "modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "profiles/custom/{$name}": [
+                "type:drupal-custom-profile"
+            ],
+            "themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ]
+        },
+        "drupal-core-project-message": {
+            "include-keys": [
+                "homepage",
+                "support"
+            ],
+            "post-create-project-cmd-message": [
+                "<bg=blue;fg=white>                                                         </>",
+                "<bg=blue;fg=white>  Congratulations, you\u2019ve installed the Drupal codebase  </>",
+                "<bg=blue;fg=white>  from the drupal/legacy-project template!               </>",
+                "<bg=blue;fg=white>                                                         </>",
+                "",
+                "<bg=yellow;fg=black>Next steps</>:",
+                "  * Install the site: https://www.drupal.org/docs/installing-drupal",
+                "  * Read the user guide: https://www.drupal.org/docs/user_guide/en/index.html",
+                "  * Get support: https://www.drupal.org/support",
+                "  * Get involved with the Drupal community:",
+                "      https://www.drupal.org/getting-involved",
+                "  * Remove the plugin that prints this message:",
+                "      composer remove drupal/core-project-message"
+            ]
+        }
+    }
+}

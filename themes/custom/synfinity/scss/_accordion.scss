@@ -1,0 +1,50 @@
+.ui-accordion {
+  margin-bottom: 60px;
+
+  .ui-accordion-header {
+    margin: 10px 0 0 0;
+    font-size: 38px;
+  }
+
+  .ui-widget-content {
+    font-family: $font-family-sans-serif;
+    font-weight: $font-weight-normal;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    border: 1px solid $secondary;
+    background-color: rgba(0,0,0,0.3);
+    color: $white;
+  }
+}
+
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+  background-color: rgba(0,0,0,0.8);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: $white;
+  padding: 15px;
+}
+
+
+.ui-state-active .ui-icon,
+.ui-button:active .ui-icon {
+  // background-image: url("../../../../modules/contrib/jquery_ui/assets/vendor/jquery.ui/themes/base/images/ui-icons_444444_256x240.png");
+}
+
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+  border: 1px solid $secondary;
+  background: $secondary;
+  color: $white;
+}
+  

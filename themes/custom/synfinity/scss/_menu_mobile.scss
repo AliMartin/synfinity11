@@ -1,0 +1,109 @@
+/*
+@media only screen and (min-width : 1199px) {
+  #block-synfinity-responsivemenumobileicon {
+    display: none;
+  }
+}
+*/
+
+body.mm-wrapper_opening {
+  .responsive-menu-toggle-icon {
+    background-color: $secondary;
+  }
+}
+
+#block-synfinity-responsivemenumobileicon {
+  span.label {
+    display: none;
+  }
+
+  .responsive-menu-toggle-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    border: 1px solid $white;
+    border-radius: 50%;
+  }
+
+  .responsive-menu-toggle-icon:hover,
+  .responsive-menu-toggle-icon:active {
+    background-color: $secondary;
+  }
+
+  .responsive-menu-toggle-icon::before,
+  .responsive-menu-toggle-icon::after,
+  .responsive-menu-toggle-icon span.icon {
+    width: 16px;
+    height: 1px;
+    left: inherit;
+  }
+
+  .responsive-menu-toggle-icon::before    {top: 12px;}
+  .responsive-menu-toggle-icon span.icon  {top: 17px;}
+  .responsive-menu-toggle-icon::after     {top: 22px;}
+}
+
+body.mm-wrapper_opening {
+  #block-synfinity-responsivemenumobileicon {  
+    .responsive-menu-toggle-icon::before    {top: 17px;}
+    .responsive-menu-toggle-icon::after     {top: 17px;}
+  }
+}
+
+
+.mm-menu_theme-white {
+  background-color: $white;
+  --mm-color-background: $white;
+  color: $black;
+
+  .mm-panels {
+    .mm-navbar:before {
+      content: '';
+      background: url("/themes/custom/synfinity/images/logo-black.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      display: block;
+      position: relative;
+      left: 35%;
+      width: 30%;
+      height: 100px;
+    } 
+
+    .mm-navbar {
+      border-bottom: none;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .mm-navbar a {
+      display: none;
+    }
+  }
+
+  ul.mm-listview {
+    li.mm-listitem {
+      // font-family: $headings-font-family;
+      line-height: 1;
+      text-transform: uppercase;
+      color: $black;
+      --mm-color-text: $black;
+      text-align: center;
+    }
+    li.mm-listitem::after {
+      display: none;
+    }
+    .mm-listitem__text {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .mm-listitem_selected > .mm-listitem__text {
+      color: $white;
+      background: $secondary;
+    }
+  }
+}
+
+

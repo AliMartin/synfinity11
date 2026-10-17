@@ -1,0 +1,90 @@
+// Front page tweaks
+
+.video-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  // The wallpaper is decorative and must never intercept content clicks.
+  pointer-events: none;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire area */
+}
+
+
+// Mailing list
+
+.path-frontpage #block-synfinity-webform {
+  position: relative;
+  background-image: url(/themes/custom/synfinity/images/webform-background-3.jpg);
+  background-position: center center;
+  background-size: cover;
+  border-radius: $border-radius-img;
+  padding: 20px;
+  margin: 30px 0;
+  z-index: 0;
+  overflow: hidden; /* In case the pseudo-element overflows */
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Black with 50% opacity */
+    z-index: -1; /* Put behind the text but in front of the background image */
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  .form-item {
+    max-width: inherit;
+    text-align: center;
+  }
+
+  .form-control {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .form-actions {
+    margin-bottom: 0;
+  }
+}
+
+
+// Latest news
+#block-synfinity-views-block-news-block-1 .view-news {
+  .view-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    .views-row {
+      background-color: rgba(0, 0, 0, 0.4);
+
+      @media (min-width: 992px) and (max-width: 1200px) {
+        max-width: 45%;
+      }
+
+      @media (min-width: 768px) and (max-width: 991px) {
+        max-width: 45%;
+      }
+  
+      @media (max-width: 767px) {
+        max-width: 100%;
+      }
+    }  
+  }
+}

@@ -1,0 +1,79 @@
+.node-45.page-node-type-multimedia {
+  main {
+    .region-content {
+      text-align: left;
+      max-width: inherit;
+      margin: 45px auto 90px auto;
+      background-color: rgba(0,0,0,0.75);
+      padding: 30px 30px 90px 30px;
+      border-radius: 20px;
+
+      @media (max-width: 575px) {
+        padding: 10px 10px 60px 10px;
+      }
+    }
+  }
+}
+
+#package-teaser {
+  text-align: center;
+  margin-bottom: 45px;
+  font-size: x-large;
+}
+
+
+#package-matrix {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid rgba(255,255,255,0.6);
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+
+  th, td {
+    border: inherit;
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: center;
+  }
+
+  td.yes {color: $green;}
+  td.no {color: $red;}
+
+  tr.package td,
+  tr.price td {
+    line-height: 1;
+    text-transform: lowercase;
+  }
+
+  tr.price td.title {
+    text-transform: capitalize !important;
+  }
+
+  tbody tr:nth-child(odd)   {background-color: rgba(0,0,0,0.4); /* Light grey for odd rows */}
+  tbody tr:nth-child(even)  {background-color: rgba(0,0,0,0.0); /* White for even rows */}
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    table   {font-size: 14px;}
+    th, td  {padding: 6px;}
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    table   {font-size: 12px;}
+    th, td  {padding: 6px;}
+  }
+
+  @media (max-width: 575px) {
+    table   {font-size: 12px;}
+    th, td  {padding: 4px;}
+  }
+}
+
+#package-notes {
+  h4 {
+    margin-top: 30px;
+  }
+}

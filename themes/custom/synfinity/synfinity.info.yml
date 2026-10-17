@@ -1,0 +1,28 @@
+name: Synfinity
+type: theme
+description: 'Synfinity subtheme based on Bootstrap 5 theme.'
+core_version_requirement: '^10.1 || ^11'
+'base theme': bootstrap5
+libraries:
+  - synfinity/global-styling
+ckeditor_stylesheets:
+  - css/style.css
+ckeditor5-stylesheets:
+  - css/ck5style.css
+regions:
+  header: Header
+  nav_branding: 'Navigation branding region'
+  upper_cta: 'Upper CTA'
+  nav_main: 'Main navigation region'
+  nav_additional: 'Additional navigation region (eg search form, social icons, etc)'
+  breadcrumb: Breadcrumbs
+  background_image: 'Background image'
+  content: 'Main content'
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  lower_cta: 'Lower CTA'
+  logos: Logos
+  footer: Footer
+  hidden_blocks: 'Hidden blocks for TB Mega Menu'
+libraries-override:
+  bootstrap5/global-styling: false

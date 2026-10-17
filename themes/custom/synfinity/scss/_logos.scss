@@ -1,0 +1,17 @@
+#footer-logos {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgba(0,0,0,0.6);
+
+  .view-footer-logos {
+    .slick-track {
+      display: flex;
+      align-items: center;
+    }
+    .slick__slide {
+      display: flex;
+      justify-content: center;
+      padding: 0 20px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+main .region-content a {
+  color: $secondary;
+  text-decoration: inherit;
+  border-bottom: 1px solid rgba(0,0,0,0);
+  &:hover,
+  &:focus {
+    color: $secondary;
+    text-decoration: inherit;
+    border-bottom: 1px solid $secondary;  
+  }
+}
+
+#show-buttons .menu-btn,
+#promo-video .menu-btn,
+#block-views-blockmenu-gallery-block-1 .menu-btn,
+.block-block-content .field--name-field-link a,
+main .region-content .btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: $white;
+  background-color: inherit;
+  border-bottom: inherit;
+  border: 1px solid $white;
+  border-radius: 20px;
+  padding: 10px 16px;
+  line-height: 1;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $secondary;
+    border: 1px solid $white;
+  }
+}

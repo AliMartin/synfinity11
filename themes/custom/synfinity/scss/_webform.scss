@@ -1,0 +1,128 @@
+body.path-webform,
+body.page-node-type-webform {
+  main {
+    .region-content {
+      max-width: 850px;
+      text-align: center;
+      margin: 20vh auto 90px auto;
+      background-color: rgba(0,0,0,0.75);
+      padding: 30px;
+      border-radius: 20px;
+    }
+  }
+}
+
+// Remove input field tints
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  box-shadow: 0 0 0px 1000px white inset;
+  -webkit-text-fill-color: #000; /* Ensures text color is visible */
+}
+
+
+// Placeholder text
+.form-control::-webkit-input-placeholder	{color: rgba(255,255,255,0.65);} /* Chrome/Opera/Safari */
+.form-control::-moz-placeholder 					{color: rgba(255,255,255,0.65);} /* Firefox 19+ */
+.form-control:-ms-input-placeholder 			{color: rgba(255,255,255,0.65);} /* IE 10+ */
+.form-control:-moz-placeholder 						{color: rgba(255,255,255,0.65);} /* Firefox 18- */
+
+form > div {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.form-item {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.form-control {
+  background-color: inherit;
+  border: 1px solid $white;
+  border-radius: 20px;
+
+  &:focus,
+  &:active {
+    background-color: inherit;
+    box-shadow: inherit;
+    border: 1px solid $secondary;
+  }
+}
+
+select {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.form-select {
+  --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+}
+
+
+// Select2
+fieldset.webform-select2 {
+
+  .form-item {
+    margin-bottom: 0;
+  }
+
+  .select2-container--default .select2-selection--single {
+    background-color: inherit;
+    border: 1px solid $white;
+    border-radius: 20px;
+    padding: 0.375rem 0.75rem;
+    height: inherit;
+
+    .select2-selection__rendered {
+      color: $white;
+      line-height: inherit;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .select2-selection__arrow {
+      height: 26px;
+      top: 5px;
+      right: 10px;
+    }
+
+    .select2-selection__arrow b {
+      border-color: $white transparent transparent transparent;
+    }    
+  }
+
+  .select2-search {
+    display: none;
+  }
+
+}
+
+
+
+// Modal thank you popup
+.ui-widget.ui-widget-content {
+  border: inherit;
+  border-radius: 10px;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+  font-family: $headings-font-family;
+  text-transform: uppercase;
+  color: $white;
+  background-color: rgba(0,0,0,0.8);
+  border: inherit;
+  border-radius: 10px 10px 0 0;
+}
+
+.ui-widget-content {
+  color: $white;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.btn-close,
+.ui-dialog .ui-dialog-titlebar-close {
+  box-shadow: inherit;
+  --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+}
