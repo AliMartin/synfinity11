@@ -60,12 +60,21 @@
         {
             "type": "package",
             "package": {
-                "name": "jackmoore/colorbox",
-                "version": "1.6.4",
+                "name": "turbojet-technologies/colorbox",
+                "version": "1.7.0",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://github.com/jackmoore/colorbox/archive/1.6.4.zip",
+                    "url": "https://github.com/TurbojetTechnologies/colorbox/archive/refs/tags/1.7.0.zip",
                     "type": "zip"
+                },
+                "license": "MIT",
+                "extra": {
+                    "installer-name": "colorbox"
+                },
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/TurbojetTechnologies/colorbox.git",
+                    "reference": "1.7.0"
                 }
             }
         },
@@ -154,12 +163,12 @@
         "drupal/xmlsitemap": "^2.0@beta",
         "drush/drush": "^13",
         "enyo/dropzone": "4.2.0",
-        "jackmoore/colorbox": "^1.6",
         "npm-asset/blazy": "^1.8",
         "npm-asset/cropper": "^4.1",
         "npm-asset/slick-carousel": "^1.8",
         "npm-asset/superfish": "^1.7",
-        "oomphinc/composer-installers-extender": "^2.0"
+        "oomphinc/composer-installers-extender": "^2.0",
+        "turbojet-technologies/colorbox": "1.7.0"
     },
     "conflict": {
         "drupal/drupal": "*"

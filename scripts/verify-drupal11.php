@@ -24,6 +24,7 @@ $checkPage = static function (string $path, bool $authenticated = FALSE) use ($c
 };
 
 $html = $checkPage('/');
+$checkPage('/gallery');
 $dom = new DOMDocument();
 @$dom->loadHTML($html);
 $xpath = new DOMXPath($dom);

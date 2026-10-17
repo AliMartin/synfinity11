@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "24799fc40e2954b4aefc7c73c599494c",
+    "content-hash": "189c8b2a9f64fe1fbb13b14624d4861f",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4884,15 +4884,6 @@
                 }
             ],
             "time": "2026-08-24T09:13:11+00:00"
-        },
-        {
-            "name": "jackmoore/colorbox",
-            "version": "1.6.4",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/jackmoore/colorbox/archive/1.6.4.zip"
-            },
-            "type": "drupal-library"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -9789,6 +9780,26 @@
                 }
             ],
             "time": "2026-10-12T12:34:30+00:00"
+        },
+        {
+            "name": "turbojet-technologies/colorbox",
+            "version": "1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TurbojetTechnologies/colorbox.git",
+                "reference": "1.7.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/TurbojetTechnologies/colorbox/archive/refs/tags/1.7.0.zip"
+            },
+            "type": "drupal-library",
+            "extra": {
+                "installer-name": "colorbox"
+            },
+            "license": [
+                "MIT"
+            ]
         },
         {
             "name": "twig/html-extra",

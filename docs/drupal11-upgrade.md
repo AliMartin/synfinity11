@@ -5,6 +5,9 @@ Completed locally on 17 October 2026:
 - Drupal 10.6.19 to 11.4.10; core Composer requirements now allow Drupal 11.
 - Gin 4.1.4 to 5.0.16 and Gin Toolbar 2.1.0 to 3.0.3.
 - Symfony dependencies updated to 7.4; Drush remains 13.8.0.
+- Colorbox JavaScript library replaced: Jack Moore 1.6.4 to Turbojet 1.7.0,
+  as required by Colorbox 2.2.x for jQuery 4. Composer installs it into
+  libraries/colorbox through its installer-name; retain this package definition.
 - DDEV project type changed to drupal11; PHP 8.3 and MariaDB 11.8 retained.
 - All pending schema and configuration updates applied; maintenance mode disabled.
 - Drupal's standard scaffold files updated, including .htaccess. No pre-existing
