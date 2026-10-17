@@ -1,0 +1,31 @@
+uuid: 72cdff1f-c270-4d42-ada7-e5cb62c119b3
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.webform
+    - node.type.webform
+  module:
+    - webform
+_core:
+  default_config_hash: w6hvTj8CaO8YVQDnlsD-jRBzMA_vNmx2cXLEKX13yT4
+id: node.webform.webform
+field_name: webform
+entity_type: node
+bundle: webform
+label: Webform
+description: 'Select the webform that you would like to attach to this node.'
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: ''
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings: {  }
+field_type: webform

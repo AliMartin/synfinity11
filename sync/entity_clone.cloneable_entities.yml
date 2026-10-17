@@ -1,0 +1,10 @@
+cloneable_entities:
+  - node
+  - linkit_profile
+  - ai_prompt_type
+  - ai_prompt
+  - crop_type
+  - crop
+  - ai_guardrail
+  - ai_guardrail_set
+  - ai_file

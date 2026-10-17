@@ -1,0 +1,21 @@
+uuid: 8ee91258-04d2-45b0-9a8e-6d87315610eb
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - node
+id: logo
+label: Logo
+type: 'canonical_entities:node'
+pattern: '/logo/[node:title]'
+selection_criteria:
+  d0ff3318-e902-44eb-9d65-ae3d1f61a591:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      endorsement: endorsement
+selection_logic: and
+weight: -5
+relationships: {  }

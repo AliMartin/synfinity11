@@ -1,0 +1,18 @@
+uuid: 88456751-5c4a-49f7-a648-c706a9140ae6
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.testimonial
+id: node.testimonial.title
+field_name: title
+entity_type: node
+bundle: testimonial
+label: Client
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,15 @@
+uuid: e61a5a1f-74a7-405f-95d8-3768a4264602
+langcode: en-gb
+status: true
+dependencies: {  }
+name: view_thumbnail
+label: 'View thumbnail'
+effects:
+  51964ed3-a7cf-47ad-ac3d-405018fdefc4:
+    uuid: 51964ed3-a7cf-47ad-ac3d-405018fdefc4
+    id: image_scale_and_crop
+    weight: 3
+    data:
+      width: 355
+      height: 200
+      anchor: center-center

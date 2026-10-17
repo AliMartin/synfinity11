@@ -1,0 +1,255 @@
+uuid: 982f938c-83e6-4abc-b358-ac3742469441
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  theme:
+    - synfinity
+id: main__synfinity
+menu: main
+theme: synfinity
+block_config: |-
+  {
+      "animation": "fading",
+      "duration": 200,
+      "delay": 300,
+      "breakpoint": 768,
+      "hide-mobile-menu": "1",
+      "auto-arrow": "1",
+      "always-show-submenu": "",
+      "number-columns": 11
+  }
+menu_config: |-
+  {
+      "menu_link_content:0cbc1e52-d26c-4f39-8910-880ab39db39f": {
+          "rows_content": [
+              [
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "synfinity_corporateevents",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "3",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  },
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "synfinity_weddings",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "3",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  },
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "synfinity_privateparties",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "3",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  },
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "synfinity_christmasparties",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "3",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  }
+              ]
+          ],
+          "submenu_config": {
+              "width": "",
+              "class": "",
+              "group": "0"
+          },
+          "item_config": {
+              "class": "your-event",
+              "xicon": "",
+              "caption": "",
+              "alignsub": "",
+              "group": "0",
+              "hidewcol": "0",
+              "hidesub": "0",
+              "label": ""
+          }
+      },
+      "menu_link_content:5f1256b2-f13a-4b18-9a20-df0509ae6306": {
+          "rows_content": [
+              [
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "synfinity_theessentials",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "3",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  },
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "synfinity_thesaxappeal",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "3",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  },
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "synfinity_thefullexperience",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "3",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  },
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "synfinity_theultimateshow",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "3",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  }
+              ],
+              [
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "synfinity_showbuttons",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "12",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  }
+              ]
+          ],
+          "submenu_config": {
+              "width": "",
+              "class": "",
+              "group": "0"
+          },
+          "item_config": {
+              "class": "",
+              "xicon": "",
+              "caption": "",
+              "alignsub": "",
+              "group": "0",
+              "hidewcol": "0",
+              "hidesub": "0",
+              "label": ""
+          }
+      },
+      "menu_link_content:a8084084-cc39-4e16-9ffd-1ffa86b127bf": {
+          "rows_content": [
+              [
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "synfinity_promovideo",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "6",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  },
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "synfinity_views_block__menu_gallery_block_1",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "6",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  }
+              ]
+          ],
+          "submenu_config": {
+              "width": "",
+              "class": "",
+              "group": "0"
+          },
+          "item_config": {
+              "class": "",
+              "xicon": "",
+              "caption": "",
+              "alignsub": "",
+              "group": "0",
+              "hidewcol": "0",
+              "hidesub": "0",
+              "label": ""
+          }
+      }
+  }

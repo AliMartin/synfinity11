@@ -1,0 +1,24 @@
+uuid: b0e624e2-14a7-44a9-bfc1-34ff51eea9d0
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - block_content.type.mega_menu
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.mega_menu.body
+field_name: body
+entity_type: block_content
+bundle: mega_menu
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

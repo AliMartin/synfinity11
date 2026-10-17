@@ -1,0 +1,23 @@
+uuid: 48bd4656-883f-4b34-bc5a-3c52c7f3fb4b
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5c15f375-3e7e-4e14-8563-cf53f09ce4fd'
+  module:
+    - block_content
+  theme:
+    - synfinity
+id: synfinity_enquirymenu
+theme: synfinity
+region: upper_cta
+weight: -8
+provider: null
+plugin: 'block_content:5c15f375-3e7e-4e14-8563-cf53f09ce4fd'
+settings:
+  id: 'block_content:5c15f375-3e7e-4e14-8563-cf53f09ce4fd'
+  label: 'Enquiry menu'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }

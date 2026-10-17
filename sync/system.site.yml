@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en-gb
+uuid: 24a0f06f-d09f-4495-9464-d31466952fbc
+name: '90s Dance Band - Synfinity'
+mail: noreply@synfinity.co.uk
+slogan: 'Timeless tunes, infinite groove'
+page:
+  403: ''
+  404: ''
+  front: /node/2
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en-gb
+mail_notification: ''

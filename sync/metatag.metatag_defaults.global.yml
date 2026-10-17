@@ -1,0 +1,14 @@
+uuid: c6f514c9-5f9b-4ba2-aaf5-a658724776dd
+langcode: en-gb
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sL588ui1E_8-2c_UupwyYxcqX2OVyMFp3HTLbbFqvPc
+id: global
+label: Global
+tags:
+  canonical_url: '[current-page:url]'
+  description: 'Book Synfinity, the UK’s top 90s dance band for weddings, parties and events. Live club classics, high energy, and pro performance guaranteed.'
+  keywords: '90s dance band, 90s band for hire, live 90s music, 90s tribute band, club classics band, rave wedding band, 90s wedding band UK, live 90s band UK, 90s party band, 90s band for events, corporate 90s band, 90s music band UK, 90s dance anthems band, hire 90s band UK, 90s band for corporate events, 90s themed party band'
+  rights: 'Hyperluminal Limited'
+  title: '[current-page:title] | [site:name]'

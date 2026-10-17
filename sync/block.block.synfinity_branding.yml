@@ -1,0 +1,25 @@
+uuid: 79e05a7a-088f-4573-a4ff-45fb6ab01167
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - synfinity
+_core:
+  default_config_hash: KuT_9dLWS1PlHIx9-J6OgxaXWExjzj2bIHiUIYjyzX8
+id: synfinity_branding
+theme: synfinity
+region: nav_branding
+weight: -16
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

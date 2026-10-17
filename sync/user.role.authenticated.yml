@@ -1,0 +1,30 @@
+uuid: 6b7a8860-755e-4960-a0e4-a2f954f24f39
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.webform_default
+  module:
+    - background_image
+    - file
+    - filter
+    - media
+    - shortcut
+    - system
+_core:
+  default_config_hash: cFrlqjtkTfvY3RGccjJkPf1SGIfJ942IrxTLWAO4mgA
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access shortcuts'
+  - 'delete own files'
+  - 'use text format basic_html'
+  - 'use text format full_html'
+  - 'use text format webform_default'
+  - 'view background image'
+  - 'view media'

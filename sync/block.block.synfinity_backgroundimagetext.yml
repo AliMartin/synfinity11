@@ -1,0 +1,20 @@
+uuid: e10bdbf3-a26c-47d6-84e7-500379a45135
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - background_image
+  theme:
+    - synfinity
+id: synfinity_backgroundimagetext
+theme: synfinity
+region: background_image
+weight: -15
+provider: null
+plugin: background_image_text
+settings:
+  id: background_image_text
+  label: 'Background Image - Text'
+  label_display: ''
+  provider: background_image
+visibility: {  }

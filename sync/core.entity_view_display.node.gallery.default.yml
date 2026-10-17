@@ -1,0 +1,64 @@
+uuid: 9036c989-085a-4802-9b61-f35264b44225
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.node.gallery.body
+    - field.field.node.gallery.field_gallery
+    - image.style.gallery
+    - image.style.gallery_thumbnail
+    - node.type.gallery
+  module:
+    - blazy
+    - user
+id: node.gallery.default
+targetEntityType: node
+bundle: gallery
+mode: default
+content:
+  field_gallery:
+    type: blazy_media
+    label: hidden
+    settings:
+      caption:
+        alt: '0'
+        title: '0'
+      class: ''
+      image: ''
+      link: ''
+      overlay: ''
+      title: ''
+      vanilla: false
+      layout: ''
+      view_mode: default
+      cache: 0
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      loading: ''
+      preload: false
+      responsive_image_style: ''
+      use_theme_field: false
+      box_style: gallery
+      image_style: gallery_thumbnail
+      media_switch: colorbox
+      ratio: ''
+      thumbnail_style: ''
+      grid: '4'
+      grid_medium: '4'
+      grid_small: '2'
+      style: nativegrid
+      svg_inline: false
+      svg_fill: false
+      svg_sanitize: true
+      svg_sanitize_remote: false
+      svg_hide_caption: false
+      svg_attributes: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  langcode: true
+  links: true

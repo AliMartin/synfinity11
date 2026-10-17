@@ -1,0 +1,21 @@
+uuid: 1d5b9641-2c0b-40f5-b6e3-0c8a89e9dbf0
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_promoted
+    - media.type.image
+id: media.image.field_promoted
+field_name: field_promoted
+entity_type: media
+bundle: image
+label: Promoted
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

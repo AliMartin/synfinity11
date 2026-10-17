@@ -1,0 +1,11 @@
+uuid: 66d71065-df38-47c7-b8f2-10364030ef6f
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - media
+id: media.menu_gallery
+label: 'Menu gallery'
+description: ''
+targetEntityType: media
+cache: true

@@ -1,0 +1,17 @@
+uuid: bf0be1a1-d095-4190-9fbf-1165433f0b28
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Gallery
+type: gallery
+description: 'Add a <em>gallery</em> of photographs to the website.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

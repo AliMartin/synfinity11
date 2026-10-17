@@ -1,0 +1,85 @@
+uuid: d51fe27f-4eba-468b-9442-6aa3874aacc0
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.node.article.body
+    - field.field.node.article.field_attachments
+    - field.field.node.article.field_faqs
+    - field.field.node.article.field_image
+    - field.field.node.article.field_metatags
+    - field.field.node.article.field_tags
+    - node.type.article
+  module:
+    - faqfield
+    - file
+    - metatag
+    - text
+    - user
+_core:
+  default_config_hash: 7fb0j9HnIXfP9ndewzgPPzzeX_SV532wuYpkscrCMCk
+id: node.article.default
+targetEntityType: node
+bundle: article
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_attachments:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_faqs:
+    type: faqfield_accordion
+    label: hidden
+    settings:
+      active: 0
+      heightStyle: content
+      collapsible: false
+      event: click
+      animate:
+        easing: linear
+        duration: 200
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_metatags:
+    type: metatag_empty_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,28 @@
+uuid: f105414e-4a18-4dbe-a9cf-23be78013f1f
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6ae72488-25f1-4da6-9f53-f4f6b9e6d9f6'
+  module:
+    - block_content
+    - system
+  theme:
+    - synfinity
+id: synfinity_curatorfeed
+theme: synfinity
+region: content
+weight: -9
+provider: null
+plugin: 'block_content:6ae72488-25f1-4da6-9f53-f4f6b9e6d9f6'
+settings:
+  id: 'block_content:6ae72488-25f1-4da6-9f53-f4f6b9e6d9f6'
+  label: 'Curator feed'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /social

@@ -1,0 +1,11 @@
+uuid: aa3d6f94-58d5-456b-878c-88320e36b96e
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - media
+id: media.listings
+label: Listings
+description: ''
+targetEntityType: media
+cache: true

@@ -1,0 +1,15 @@
+uuid: 49029a0a-27a1-4b32-8190-44f7f3b045d0
+langcode: en-gb
+status: true
+dependencies: {  }
+name: menu_gallery
+label: 'Menu gallery'
+effects:
+  d0db0ee8-2fca-4a06-bb16-dfd2a4bab5f8:
+    uuid: d0db0ee8-2fca-4a06-bb16-dfd2a4bab5f8
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 200
+      height: 150
+      anchor: center-center

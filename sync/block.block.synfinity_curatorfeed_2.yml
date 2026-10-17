@@ -1,0 +1,28 @@
+uuid: c9537a95-5b5f-4664-af96-a0f50f329f33
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6ae72488-25f1-4da6-9f53-f4f6b9e6d9f6'
+  module:
+    - block_content
+    - system
+  theme:
+    - synfinity
+id: synfinity_curatorfeed_2
+theme: synfinity
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:6ae72488-25f1-4da6-9f53-f4f6b9e6d9f6'
+settings:
+  id: 'block_content:6ae72488-25f1-4da6-9f53-f4f6b9e6d9f6'
+  label: 'Follow us on social media'
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

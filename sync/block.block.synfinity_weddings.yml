@@ -1,0 +1,23 @@
+uuid: 210a68ef-ca5f-4bc3-a8fc-81f29251a3bd
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:6e6b90b8-d5e6-4486-9670-54e5906b9d15'
+  module:
+    - block_content
+  theme:
+    - synfinity
+id: synfinity_weddings
+theme: synfinity
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:6e6b90b8-d5e6-4486-9670-54e5906b9d15'
+settings:
+  id: 'block_content:6e6b90b8-d5e6-4486-9670-54e5906b9d15'
+  label: Weddings
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility: {  }

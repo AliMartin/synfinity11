@@ -1,0 +1,49 @@
+uuid: cbc5c218-ea49-48d1-b21e-a7adbb0cea50
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.colorbox
+    - field.field.media.remote_video.field_media_oembed_video
+    - media.type.remote_video
+  module:
+    - colorbox_media_video
+_core:
+  default_config_hash: ZdPcl2hPxl5pgv3pI-07R7h51OjeUeKJTy-ab1NfM34
+id: media.remote_video.colorbox
+targetEntityType: media
+bundle: remote_video
+mode: colorbox
+content:
+  field_media_oembed_video:
+    type: colorbox_media_remote_video
+    label: hidden
+    settings:
+      max_width: '800'
+      max_height: '0'
+      loading:
+        attribute: lazy
+      is_responsive_video: '1'
+      display: thumbnail
+      link_text: 'View Video'
+      image_style: video_thumbnail
+      colorbox_gallery: post
+      colorbox_gallery_custom: ''
+      colorbox_caption: none
+      colorbox_caption_custom: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  created: true
+  langcode: true
+  thumbnail: true
+  uid: true

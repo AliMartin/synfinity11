@@ -1,0 +1,20 @@
+uuid: 848b8875-14b1-4fe0-b282-2eae2ab9a5d1
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - responsive_menu
+  theme:
+    - synfinity
+id: synfinity_responsivemenumobileicon
+theme: synfinity
+region: nav_additional
+weight: -16
+provider: null
+plugin: responsive_menu_toggle
+settings:
+  id: responsive_menu_toggle
+  label: 'Responsive menu mobile icon'
+  label_display: '0'
+  provider: responsive_menu
+visibility: {  }

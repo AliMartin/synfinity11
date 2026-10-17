@@ -1,0 +1,23 @@
+uuid: d3d54f31-c975-4edb-a94f-9cbdd5fa0d94
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:76407398-e779-4bd8-8d37-56fe51fb31d5'
+  module:
+    - block_content
+  theme:
+    - synfinity
+id: synfinity_showbuttons
+theme: synfinity
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:76407398-e779-4bd8-8d37-56fe51fb31d5'
+settings:
+  id: 'block_content:76407398-e779-4bd8-8d37-56fe51fb31d5'
+  label: 'Show buttons'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }

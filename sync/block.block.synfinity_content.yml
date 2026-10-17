@@ -1,0 +1,22 @@
+uuid: abe30a48-903c-45d3-a055-434738e49576
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - synfinity
+_core:
+  default_config_hash: aWUY7NhumGxD62ribYLinU-E1L_wZ6wKxkbSoDzTT6g
+id: synfinity_content
+theme: synfinity
+region: content
+weight: -11
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

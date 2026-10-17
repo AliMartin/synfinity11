@@ -1,0 +1,23 @@
+uuid: 512e287b-fa3f-4176-889d-6b9db6123d5d
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:1e9ec511-6d2b-4d0e-8225-df07e8efb5c3'
+  module:
+    - block_content
+  theme:
+    - synfinity
+id: synfinity_corporateevents
+theme: synfinity
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:1e9ec511-6d2b-4d0e-8225-df07e8efb5c3'
+settings:
+  id: 'block_content:1e9ec511-6d2b-4d0e-8225-df07e8efb5c3'
+  label: 'Corporate events'
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility: {  }

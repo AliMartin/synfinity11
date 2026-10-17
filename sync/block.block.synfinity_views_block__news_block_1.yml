@@ -1,0 +1,29 @@
+uuid: 4504e205-cb7a-4580-9218-755ca45770d2
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - views.view.news
+  module:
+    - system
+    - views
+  theme:
+    - synfinity
+id: synfinity_views_block__news_block_1
+theme: synfinity
+region: content
+weight: -8
+provider: null
+plugin: 'views_block:news-block_1'
+settings:
+  id: 'views_block:news-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: null
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

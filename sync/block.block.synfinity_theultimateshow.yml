@@ -1,0 +1,23 @@
+uuid: fa1c4109-116c-4611-b98b-44f7f179d75e
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:098380e6-6700-4f64-8497-e5dcf9a746c1'
+  module:
+    - block_content
+  theme:
+    - synfinity
+id: synfinity_theultimateshow
+theme: synfinity
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:098380e6-6700-4f64-8497-e5dcf9a746c1'
+settings:
+  id: 'block_content:098380e6-6700-4f64-8497-e5dcf9a746c1'
+  label: 'The Ultimate Show'
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility: {  }

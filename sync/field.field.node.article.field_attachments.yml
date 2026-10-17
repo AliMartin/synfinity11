@@ -1,0 +1,27 @@
+uuid: 05c55af6-698b-426d-aa69-ee19d1f5d897
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attachments
+    - node.type.article
+  module:
+    - file
+id: node.article.field_attachments
+field_name: field_attachments
+entity_type: node
+bundle: article
+label: Attachments
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt doc docx pdf jpg jpeg png xls xlsx ppt pptx mp3 mp4'
+  max_filesize: 32MB
+  description_field: true
+field_type: file

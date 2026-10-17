@@ -1,0 +1,20 @@
+uuid: 35bf59e0-e076-4f83-a3d9-00f30f722093
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - synfinity
+_core:
+  default_config_hash: qUi7HeT9kqHTcIKDmGO82Fb1X1Gib12zvL8QIcbLy6g
+id: synfinity_page_title
+theme: synfinity
+region: content
+weight: -15
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: 13e96100-ba69-4b4b-85ea-cac18adffaea
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:81c73f18-f18e-45e5-952e-5328512ba1f0'
+  module:
+    - block_content
+  theme:
+    - synfinity
+id: synfinity_promovideo
+theme: synfinity
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:81c73f18-f18e-45e5-952e-5328512ba1f0'
+settings:
+  id: 'block_content:81c73f18-f18e-45e5-952e-5328512ba1f0'
+  label: 'Promo video'
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,24 @@
+uuid: d5a6569e-fb7d-4285-a6e9-c100ee4fa000
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - views.view.menu_gallery
+  module:
+    - views
+  theme:
+    - synfinity
+id: synfinity_views_block__menu_gallery_block_1
+theme: synfinity
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'views_block:menu_gallery-block_1'
+settings:
+  id: 'views_block:menu_gallery-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: null
+visibility: {  }

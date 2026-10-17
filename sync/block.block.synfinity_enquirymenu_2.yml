@@ -1,0 +1,32 @@
+uuid: b46e970e-f499-485e-bf0e-343c07500b02
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5c15f375-3e7e-4e14-8563-cf53f09ce4fd'
+  module:
+    - block_content
+    - node
+  theme:
+    - synfinity
+id: synfinity_enquirymenu_2
+theme: synfinity
+region: content
+weight: -5
+provider: null
+plugin: 'block_content:5c15f375-3e7e-4e14-8563-cf53f09ce4fd'
+settings:
+  id: 'block_content:5c15f375-3e7e-4e14-8563-cf53f09ce4fd'
+  label: 'Enquiry menu'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      article: article
+      news: news

@@ -1,0 +1,23 @@
+uuid: 1f81d184-8a30-43d8-b3e7-ccc392650dab
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:c19917d8-d77e-4be2-97f7-1f0a04fa9cca'
+  module:
+    - block_content
+  theme:
+    - synfinity
+id: synfinity_christmasparties
+theme: synfinity
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:c19917d8-d77e-4be2-97f7-1f0a04fa9cca'
+settings:
+  id: 'block_content:c19917d8-d77e-4be2-97f7-1f0a04fa9cca'
+  label: 'Christmas parties'
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility: {  }

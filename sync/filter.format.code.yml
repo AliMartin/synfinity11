@@ -1,0 +1,16 @@
+uuid: f4f888ea-367d-478e-be26-559a47573897
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - insert_view
+name: Code
+format: code
+weight: 0
+filters:
+  insert_view:
+    id: insert_view
+    provider: insert_view
+    status: true
+    weight: 0
+    settings: {  }

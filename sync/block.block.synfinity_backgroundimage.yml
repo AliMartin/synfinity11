@@ -1,0 +1,20 @@
+uuid: 0a263219-a095-462a-a22b-c14317d8a48b
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - background_image
+  theme:
+    - synfinity
+id: synfinity_backgroundimage
+theme: synfinity
+region: background_image
+weight: -16
+provider: null
+plugin: background_image
+settings:
+  id: background_image
+  label: 'Background Image'
+  label_display: ''
+  provider: background_image
+visibility: {  }

@@ -1,0 +1,52 @@
+uuid: 4365e45f-05ca-4b62-8bab-c6cbce077162
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.node.testimonial.body
+    - field.field.node.testimonial.field_logo
+    - field.field.node.testimonial.field_venue
+    - image.style.logo
+    - node.type.testimonial
+  module:
+    - image
+    - text
+    - user
+id: node.testimonial.default
+targetEntityType: node
+bundle: testimonial
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_logo:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: logo
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_venue:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  langcode: true

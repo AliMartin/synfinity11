@@ -1,0 +1,22 @@
+uuid: 1169aa7b-b4af-46f4-8820-d5d76c9919de
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - synfinity
+_core:
+  default_config_hash: 8_8RJW1Y14qpVfBTcOcnOjtXR4z0HjynL2cTonCgWwg
+id: synfinity_local_tasks
+theme: synfinity
+region: content
+weight: -14
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

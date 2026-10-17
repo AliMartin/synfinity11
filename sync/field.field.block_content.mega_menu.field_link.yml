@@ -1,0 +1,23 @@
+uuid: e6c9095e-c6b4-4a7f-aa7d-7ee8ee4ad725
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - block_content.type.mega_menu
+    - field.storage.block_content.field_link
+  module:
+    - link
+id: block_content.mega_menu.field_link
+field_name: field_link
+entity_type: block_content
+bundle: mega_menu
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 1
+field_type: link

@@ -1,0 +1,22 @@
+uuid: 7815f2c6-5524-41cc-bfbd-33fbbacb9886
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - background_image
+    - filter
+    - media
+    - system
+_core:
+  default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'use text format restricted_html'
+  - 'view background image'
+  - 'view media'

@@ -1,0 +1,22 @@
+uuid: 585ae29d-594f-4e3c-97b6-0cd7aa52bd83
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - synfinity
+_core:
+  default_config_hash: MpwGsjE1_EQFEdX_OwS1I5Z0R3JQCBMNqlvJn8p-rcE
+id: synfinity_messages
+theme: synfinity
+region: content
+weight: -16
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: 28b0074b-e83c-43a8-95a9-805c99539fe7
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:ca3d7c4c-e001-402b-9424-1e65da9b4a8b'
+  module:
+    - block_content
+  theme:
+    - synfinity
+id: synfinity_thesaxappeal
+theme: synfinity
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:ca3d7c4c-e001-402b-9424-1e65da9b4a8b'
+settings:
+  id: 'block_content:ca3d7c4c-e001-402b-9424-1e65da9b4a8b'
+  label: 'The Sax Appeal'
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility: {  }

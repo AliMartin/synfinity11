@@ -1,0 +1,91 @@
+uuid: e3b86220-08e7-48d7-b01b-d929b564bd36
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.article
+    - node.type.gallery
+  module:
+    - contextual
+    - file
+    - help
+    - media
+    - node
+    - path
+    - system
+    - webform
+_core:
+  default_config_hash: NtMgnXp0miNtJhag07NSjwdCm4zpJwhlDFs1HgyL4wI
+id: content_editor
+label: 'Content editor'
+weight: 2
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access help pages'
+  - 'access media overview'
+  - 'access webform overview'
+  - 'administer url aliases'
+  - 'create article content'
+  - 'create audio media'
+  - 'create document media'
+  - 'create gallery content'
+  - 'create image media'
+  - 'create media'
+  - 'create remote_video media'
+  - 'create url aliases'
+  - 'create video media'
+  - 'delete any article content'
+  - 'delete any audio media'
+  - 'delete any document media'
+  - 'delete any gallery content'
+  - 'delete any image media'
+  - 'delete any media'
+  - 'delete any remote_video media'
+  - 'delete any video media'
+  - 'delete article revisions'
+  - 'delete gallery revisions'
+  - 'delete media'
+  - 'delete own article content'
+  - 'delete own audio media'
+  - 'delete own document media'
+  - 'delete own files'
+  - 'delete own gallery content'
+  - 'delete own image media'
+  - 'delete own remote_video media'
+  - 'delete own video media'
+  - 'edit any article content'
+  - 'edit any audio media'
+  - 'edit any document media'
+  - 'edit any gallery content'
+  - 'edit any image media'
+  - 'edit any remote_video media'
+  - 'edit any video media'
+  - 'edit own article content'
+  - 'edit own audio media'
+  - 'edit own document media'
+  - 'edit own gallery content'
+  - 'edit own image media'
+  - 'edit own remote_video media'
+  - 'edit own video media'
+  - 'revert all revisions'
+  - 'revert article revisions'
+  - 'revert gallery revisions'
+  - 'update any media'
+  - 'update media'
+  - 'view all media revisions'
+  - 'view all revisions'
+  - 'view any webform submission'
+  - 'view article revisions'
+  - 'view gallery revisions'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view the administration theme'

@@ -1,0 +1,23 @@
+uuid: 015bed44-3ffe-40af-9140-044b398a7f9b
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:21b30d17-08d8-4f6e-93a7-04293a356184'
+  module:
+    - block_content
+  theme:
+    - synfinity
+id: synfinity_theessentials
+theme: synfinity
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:21b30d17-08d8-4f6e-93a7-04293a356184'
+settings:
+  id: 'block_content:21b30d17-08d8-4f6e-93a7-04293a356184'
+  label: 'The Essentials'
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility: {  }

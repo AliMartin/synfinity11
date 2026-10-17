@@ -1,0 +1,23 @@
+uuid: f58a2cf5-e9ce-4e39-8d19-b4c950711f47
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ebbc69f4-0096-4091-a412-4dbbb4fab9aa'
+  module:
+    - block_content
+  theme:
+    - synfinity
+id: synfinity_socialmediafooter
+theme: synfinity
+region: footer
+weight: -6
+provider: null
+plugin: 'block_content:ebbc69f4-0096-4091-a412-4dbbb4fab9aa'
+settings:
+  id: 'block_content:ebbc69f4-0096-4091-a412-4dbbb4fab9aa'
+  label: 'Social media footer'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }

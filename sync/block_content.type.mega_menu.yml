@@ -1,0 +1,8 @@
+uuid: 93ab02b9-5d12-4ec2-8bd2-770773b91117
+langcode: en-gb
+status: true
+dependencies: {  }
+id: mega_menu
+label: 'Mega menu'
+revision: false
+description: 'Block type for creating mega menu items.'

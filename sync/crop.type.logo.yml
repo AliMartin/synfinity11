@@ -1,0 +1,12 @@
+uuid: da54997f-94ec-4950-bbdf-f250a2c41bc7
+langcode: en-gb
+status: true
+dependencies: {  }
+label: Logo
+id: logo
+description: ''
+aspect_ratio: '60:35'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

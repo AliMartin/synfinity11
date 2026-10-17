@@ -1,0 +1,26 @@
+uuid: 65d69a58-0bbd-422b-b3d9-34dd59da2659
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - crop.type.logo
+  module:
+    - crop
+name: logo
+label: Logo
+effects:
+  54d4f0ca-ecb8-4fbb-8df8-72e6fbb94475:
+    uuid: 54d4f0ca-ecb8-4fbb-8df8-72e6fbb94475
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: logo
+      automatic_crop_provider: null
+  0378b5a4-1aa4-4d28-9810-613df0f6826e:
+    uuid: 0378b5a4-1aa4-4d28-9810-613df0f6826e
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      width: 900
+      height: 525
+      anchor: center-center

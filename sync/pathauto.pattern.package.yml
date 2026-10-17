@@ -1,0 +1,23 @@
+uuid: 90011cbf-68ae-4e34-ab22-2b41215418ff
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.package
+  module:
+    - node
+id: package
+label: Package
+type: 'canonical_entities:node'
+pattern: '/package/[node:title]'
+selection_criteria:
+  707ba45b-c8e3-4d54-a5b4-f35d1d829a50:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      package: package
+selection_logic: and
+weight: -5
+relationships: {  }

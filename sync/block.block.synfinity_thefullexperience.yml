@@ -1,0 +1,23 @@
+uuid: 601581dd-71fa-4277-aadb-0ed3e921fb1f
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:078fb266-7393-46fa-8f45-b56de362542c'
+  module:
+    - block_content
+  theme:
+    - synfinity
+id: synfinity_thefullexperience
+theme: synfinity
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:078fb266-7393-46fa-8f45-b56de362542c'
+settings:
+  id: 'block_content:078fb266-7393-46fa-8f45-b56de362542c'
+  label: 'The Full Experience'
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility: {  }

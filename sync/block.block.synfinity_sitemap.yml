@@ -1,0 +1,23 @@
+uuid: c886c57b-0f05-44c7-937c-5bc12a7493e6
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:859c9b2d-27ed-494e-b012-ce9dc5144b57'
+  module:
+    - block_content
+  theme:
+    - synfinity
+id: synfinity_sitemap
+theme: synfinity
+region: footer
+weight: -4
+provider: null
+plugin: 'block_content:859c9b2d-27ed-494e-b012-ce9dc5144b57'
+settings:
+  id: 'block_content:859c9b2d-27ed-494e-b012-ce9dc5144b57'
+  label: Sitemap
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }

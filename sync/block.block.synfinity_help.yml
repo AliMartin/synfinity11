@@ -1,0 +1,22 @@
+uuid: 2e537c63-ac6a-4c7c-be3f-ead944ca3160
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - synfinity
+_core:
+  default_config_hash: x_0x9P07bBwWg7QEPw_AzEPQhVo7Q_FLG2AyiBbO3FU
+id: synfinity_help
+theme: synfinity
+region: content
+weight: -13
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

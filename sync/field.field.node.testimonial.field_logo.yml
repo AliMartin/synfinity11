@@ -1,0 +1,38 @@
+uuid: 3e7a556a-6cc7-4f8f-9690-a5288305fbf0
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_logo
+    - node.type.testimonial
+  module:
+    - image
+id: node.testimonial.field_logo
+field_name: field_logo
+entity_type: node
+bundle: testimonial
+label: Logo
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: logo
+  file_extensions: 'png gif jpg jpeg webp'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image
